@@ -112,6 +112,16 @@ h1 {
     justify-content: space-around;
 }
 
+.icone-preco {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icone-preco ion-icon {
+    color: #32B72F;
+    font-size: 20px;
+}
+
 .fechar-pedido {
     width: 100%;
     height: 92px;
@@ -124,7 +134,7 @@ h1 {
     align-items: center;
 }
 
-.fechar-pedido button {
+.sem-selecao {
     background-color: #CBCBCB;
     border-radius: 50px;
     width: 364px;
@@ -135,13 +145,51 @@ h1 {
     align-items: center;
 }
 
-.fechar-pedido p {
+.sem-selecao p {
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
 }
 
-.fechar-pedido div {
+.sem-selecao div {
     width: 200px;
     text-align: center;
+}
+
+.com-selecao {
+    background-color: #32B72F;
+    border-radius: 50px;
+    width: 364px;
+    height: 61px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com-selecao p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.com-selecao div {
+    width: 200px;
+    text-align: center;
+}
+
+.desliga {
+    display:none;
+}
+
+.selecionado1 {
+    border: 5px solid #32B72F;
+}
+
+.selecionado2 {
+    border: 5px solid #32B72F;
+}
+
+.selecionado3 {
+    border: 5px solid #32B72F;
 }
