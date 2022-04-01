@@ -193,3 +193,15 @@ h1 {
 .selecionado3 {
     border: 5px solid #32B72F;
 }
+
+.selecionado1 ion-icon{
+    display: inline;
+}
+
+.selecionado2 ion-icon{
+    display: inline;
+}
+
+.selecionado3 ion-icon {
+    display: inline;
+}
