@@ -74,6 +74,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin-right: 18px;
+    cursor:pointer;
 }
 
 .card img {
@@ -165,6 +166,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .com-selecao p {

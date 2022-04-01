@@ -13,7 +13,6 @@ function botaoComida(elemento) {
         antigoBotao.classList.add("desliga");
         novoBotao.classList.remove("desliga");
     }
-
 } 
 
 
