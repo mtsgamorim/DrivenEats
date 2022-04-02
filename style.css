@@ -207,3 +207,7 @@ h1 {
 .selecionado3 ion-icon {
     display: inline;
 }
+
+a {
+    text-decoration: none;
+}

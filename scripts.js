@@ -1,3 +1,33 @@
+let numeroEmpresa = "5532987028338";                  // basta mudar aqui o numero para testes :)
+
+
+function botaoGerarLink() {
+    let texto;
+    let somaTotal;
+    let elemento;
+    const prato = document.querySelector(".selecionado1 h3").innerHTML;
+    const bebida = document.querySelector(".selecionado2 h3").innerHTML;
+    const sobremesa = document.querySelector(".selecionado3 h3").innerHTML;
+    let valorPrato = document.querySelector(".selecionado1 span").innerHTML;
+    let valorBebida = document.querySelector(".selecionado2 span").innerHTML;
+    let valorSobremesa = document.querySelector(".selecionado3 span").innerHTML;
+    valorPrato = valorPrato.replace(",", ".");
+    valorBebida = valorBebida.replace(",", ".");
+    valorSobremesa = valorSobremesa.replace(",", ".");
+    valorPrato = Number(valorPrato);
+    valorBebida = Number(valorPrato);
+    valorSobremesa = Number(valorSobremesa);
+    somaTotal = (valorPrato + valorBebida + valorSobremesa)
+    texto = `Olá, gostaria de fazer o pedido:
+    - Prato: ${prato}
+    - Bebida: ${bebida}
+    - Sobremesa: ${sobremesa}
+    Total: R$ ${somaTotal.toFixed(2)}`
+    texto = encodeURIComponent(texto);
+    let link = `https://wa.me/${numeroEmpresa}?text=${texto}`
+    document.querySelector("a").href=link;
+}
+
 function botaoComida(elemento) {
     const marcado = document.querySelector(".selecionado1");
     if (marcado !== null) {
@@ -12,6 +42,7 @@ function botaoComida(elemento) {
         const novoBotao = document.querySelector(".com-selecao");
         antigoBotao.classList.add("desliga");
         novoBotao.classList.remove("desliga");
+        botaoGerarLink();
     }
 } 
 
@@ -30,6 +61,7 @@ function botaoBebida(elemento) {
         const novoBotao = document.querySelector(".com-selecao");
         antigoBotao.classList.add("desliga");
         novoBotao.classList.remove("desliga");
+        botaoGerarLink();
     }
 } 
 
@@ -47,5 +79,7 @@ function botaoSobremesa(elemento) {
         const novoBotao = document.querySelector(".com-selecao");
         antigoBotao.classList.add("desliga");
         novoBotao.classList.remove("desliga");
+        botaoGerarLink();
     }
 } 
+
