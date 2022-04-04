@@ -3,7 +3,7 @@ let numeroEmpresa = "5532987028338";                  // basta mudar aqui o nume
 
 function botaoGerarLink() {
     let texto;
-    let somaTotal;
+    let somaTotal = 0;
     let elemento;
     const prato = document.querySelector(".selecionado1 h3").innerHTML;
     const bebida = document.querySelector(".selecionado2 h3").innerHTML;
@@ -15,7 +15,7 @@ function botaoGerarLink() {
     valorBebida = valorBebida.replace(",", ".");
     valorSobremesa = valorSobremesa.replace(",", ".");
     valorPrato = Number(valorPrato);
-    valorBebida = Number(valorPrato);
+    valorBebida = Number(valorBebida);
     valorSobremesa = Number(valorSobremesa);
     somaTotal = (valorPrato + valorBebida + valorSobremesa)
     texto = `Olá, gostaria de fazer o pedido:
